@@ -27,7 +27,7 @@ export function About() {
             className="relative"
           >
             <img
-              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=800"
+              src="/attached_assets/IMG_20250902_122306_1757303444294.jpg"
               alt="Alex Chen Professional Photo"
               className="w-full max-w-md mx-auto rounded-2xl neon-border hover-tilt"
               data-testid="profile-image"
