@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Shield, Code, Camera, Palette, Brain, Users } from "lucide-react";
 import { useIntersectionObserver } from "@/hooks/use-intersection-observer";
+import profileImage from "@/assets/profile.jpg";
 
 export function About() {
   const { ref, isIntersecting } = useIntersectionObserver();
@@ -27,7 +28,7 @@ export function About() {
             className="relative"
           >
             <img
-              src="/attached_assets/IMG_20250902_122306_1757303444294.jpg"
+              src={profileImage}
               alt="Alex Chen Professional Photo"
               className="w-full max-w-md mx-auto rounded-2xl neon-border hover-tilt"
               data-testid="profile-image"
