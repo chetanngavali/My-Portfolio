@@ -32,9 +32,13 @@ export function Contact() {
   const contactMutation = useMutation({
     mutationFn: async (data: InsertContact) => {
       const response = await apiRequest("POST", "/api/contacts", data);
-      return response.json();
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+      const result = await response.json();
+      return result;
     },
-    onSuccess: () => {
+    onSuccess: (data) => {
       toast({
         title: "Message sent successfully!",
         description: "I'll get back to you within 24 hours.",
@@ -187,7 +191,7 @@ export function Contact() {
                   type="submit"
                   disabled={contactMutation.isPending}
                   className="w-full px-8 py-4 bg-gradient-to-r from-primary to-secondary text-primary-foreground rounded-lg font-semibold hover:shadow-lg hover:shadow-primary/25 transition-all hover-tilt"
-                  data-testid="contact-submit-button"
+                  data-testid="submit-contact-form"
                 >
                   {contactMutation.isPending ? (
                     <>
