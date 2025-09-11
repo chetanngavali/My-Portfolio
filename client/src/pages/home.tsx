@@ -1,4 +1,3 @@
-import React from "react";
 import { ScrollProgress } from "@/components/layout/scroll-progress";
 import { Navigation } from "@/components/layout/navigation";
 import { Footer } from "@/components/layout/footer";

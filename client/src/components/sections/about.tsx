@@ -1,4 +1,3 @@
-import React from "react";
 import { motion } from "framer-motion";
 import { Shield, Code, Camera, Palette, Brain, Users } from "lucide-react";
 import { useIntersectionObserver } from "@/hooks/use-intersection-observer";

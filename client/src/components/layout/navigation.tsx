@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Link, useLocation } from "wouter";
 import { Menu, X, Moon, Sun } from "lucide-react";
 import { useTheme } from "@/components/ui/theme-provider";

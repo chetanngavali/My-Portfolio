@@ -1,4 +1,3 @@
-import React from "react";
 import { motion } from "framer-motion";
 import { Send, Mail, Phone, MapPin, Linkedin, Github, Instagram, Twitter } from "lucide-react";
 import { useForm } from "react-hook-form";

@@ -1,4 +1,3 @@
-import React from "react";
 import { motion } from "framer-motion";
 import { Calendar, Users, Award, ExternalLink, MapPin } from "lucide-react";
 import { useIntersectionObserver } from "@/hooks/use-intersection-observer";

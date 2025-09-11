@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { motion } from "framer-motion";
 import { Rocket, Github, ExternalLink } from "lucide-react";
 import { useIntersectionObserver } from "@/hooks/use-intersection-observer";
