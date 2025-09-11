@@ -38,13 +38,13 @@ export function Cybersecurity() {
       ref={ref}
       className="py-20 relative"
       style={{
-        backgroundImage: "url('https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1920&h=1080')",
+        backgroundImage: "url('https://images.unsplash.com/photo-1518709268805-4e9042af2176?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1920&h=1080')",
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
       data-testid="cybersecurity-section"
     >
-      <div className="absolute inset-0 bg-background/90"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-background/95 via-background/90 to-primary/10"></div>
 
       <div className="container mx-auto px-6 relative z-10">
         <motion.div
