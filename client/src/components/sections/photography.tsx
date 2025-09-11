@@ -3,6 +3,11 @@ import { motion } from "framer-motion";
 import { Camera } from "lucide-react";
 import { Lightbox } from "@/components/ui/lightbox";
 import { useIntersectionObserver } from "@/hooks/use-intersection-observer";
+import urbanStreetPhoto from "@assets/generated_images/Urban_street_photography_7cff418c.png";
+import professionalPortrait from "@assets/generated_images/Professional_portrait_photography_2423bc7e.png";
+import mountainLandscape from "@assets/generated_images/Mountain_landscape_photography_66d3ce36.png";
+import macroFlowerPhoto from "@assets/generated_images/Macro_flower_photography_8caff2c1.png";
+import seascapePhoto from "@assets/generated_images/Peaceful_seascape_photography_871ffb57.png";
 
 export function Photography() {
   const { ref, isIntersecting } = useIntersectionObserver();
@@ -11,38 +16,38 @@ export function Photography() {
 
   const galleryImages = [
     {
-      src: "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600",
+      src: urbanStreetPhoto,
       alt: "Urban cityscape photography",
       title: "Urban Landscapes",
       description: "City architecture & street photography",
     },
     {
-      src: "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600",
+      src: professionalPortrait,
       alt: "Portrait photography",
       title: "Portrait Series",
       description: "Professional & artistic portraits",
     },
     {
-      src: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600",
+      src: mountainLandscape,
       alt: "Nature landscape photography",
       title: "Nature Escapes",
       description: "Landscape & adventure photography",
     },
     {
-      src: "https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600",
+      src: macroFlowerPhoto,
       alt: "Abstract architecture photography",
       title: "Abstract Forms",
       description: "Geometric & minimal compositions",
     },
     {
-      src: "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600",
+      src: seascapePhoto,
       alt: "Event photography",
       title: "Event Coverage",
       description: "Corporate & social events",
     },
     {
-      src: "https://images.unsplash.com/photo-1488646953014-85cb44e25828?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600",
-      alt: "Travel photography",
+      src: seascapePhoto,
+      alt: "Travel photography", 
       title: "Travel Stories",
       description: "Cultural & destination photography",
     },

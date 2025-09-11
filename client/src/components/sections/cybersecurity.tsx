@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Shield, Wifi, Bug, Eye } from "lucide-react";
 import { useIntersectionObserver } from "@/hooks/use-intersection-observer";
+import cybersecurityBg from "@assets/generated_images/Cybersecurity_section_background_image_77b0d44d.png";
 
 export function Cybersecurity() {
   const { ref, isIntersecting } = useIntersectionObserver();
@@ -38,7 +39,7 @@ export function Cybersecurity() {
       ref={ref}
       className="py-20 relative"
       style={{
-        backgroundImage: "url('https://images.unsplash.com/photo-1518709268805-4e9042af2176?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1920&h=1080')",
+        backgroundImage: `url(${cybersecurityBg})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}

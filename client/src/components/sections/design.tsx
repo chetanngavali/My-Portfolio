@@ -2,6 +2,10 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Palette } from "lucide-react";
 import { useIntersectionObserver } from "@/hooks/use-intersection-observer";
+import mobileUiDesign from "@assets/generated_images/Mobile_UI_design_portfolio_f2bbf4b8.png";
+import brandIdentityDesign from "@assets/generated_images/Brand_identity_design_showcase_96c5e618.png";
+import creativeGraphicDesign from "@assets/generated_images/Creative_graphic_design_artwork_47c5abf4.png";
+import websiteDesign from "@assets/generated_images/Website_design_portfolio_mockup_27325ae4.png";
 
 export function Design() {
   const { ref, isIntersecting } = useIntersectionObserver();
@@ -10,28 +14,28 @@ export function Design() {
     {
       title: "UI/UX Design",
       description: "Crafting intuitive user interfaces and seamless user experiences for web and mobile applications.",
-      image: "https://images.unsplash.com/photo-1561736778-92e52a7769ef?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600",
+      image: mobileUiDesign,
       tools: ["Figma", "Adobe XD", "Sketch", "Prototyping"],
       color: "primary",
     },
     {
       title: "Brand Identity",
       description: "Developing cohesive brand identities that communicate values and create lasting impressions.",
-      image: "https://images.unsplash.com/photo-1558655146-d09347e92766?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600",
+      image: brandIdentityDesign,
       tools: ["Logo Design", "Typography", "Color Theory", "Style Guides"],
       color: "secondary",
     },
     {
       title: "Motion Graphics",
       description: "Bringing designs to life through animation and interactive motion graphics that engage users.",
-      image: "https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600",
+      image: creativeGraphicDesign,
       tools: ["After Effects", "Cinema 4D", "Lottie", "CSS Animation"],
       color: "accent",
     },
     {
       title: "Web Development",
       description: "Building responsive, performant websites that bring designs to life with clean, maintainable code.",
-      image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600",
+      image: websiteDesign,
       tools: ["React", "Next.js", "Three.js", "Tailwind CSS"],
       color: "primary",
     },
