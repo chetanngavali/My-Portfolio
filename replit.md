@@ -2,7 +2,7 @@
 
 This is a modern full-stack personal portfolio website for Alex Chen, showcasing expertise in cybersecurity, photography, design, and web development. The application features a React frontend with Three.js 3D graphics, an Express.js backend API, and a contact form system with database integration.
 
-The portfolio presents Alex's work across multiple disciplines through interactive sections including a hero with 3D particle effects, cybersecurity expertise showcase, photography gallery with lightbox functionality, design portfolio, project showcase with filtering, and a contact form for client inquiries.
+The portfolio presents Alex's work across multiple disciplines through interactive sections including a hero with 3D particle effects, cybersecurity expertise showcase, photography gallery with lightbox functionality, design portfolio, project showcase with filtering, activities and events section highlighting professional engagements, and a contact form for client inquiries.
 
 # User Preferences
 
