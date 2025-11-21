@@ -87,10 +87,11 @@
     @apply font-sans antialiased bg-background text-foreground;
     overflow-x: hidden;
     background-image: 
-      linear-gradient(rgba(180, 100, 255, 0.1) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(180, 100, 255, 0.1) 1px, transparent 1px);
+      linear-gradient(rgba(180, 100, 255, 0.15) 1.5px, transparent 1.5px),
+      linear-gradient(90deg, rgba(180, 100, 255, 0.15) 1.5px, transparent 1.5px);
     background-size: 60px 60px;
-    background-position: -1px -1px;
+    background-position: 0 0;
+    background-attachment: fixed;
   }
 
   html {
