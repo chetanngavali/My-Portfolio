@@ -16,8 +16,21 @@ export function About() {
   ];
 
   return (
-    <section id="about" ref={ref} className="py-20 bg-card" data-testid="about-section">
-      <div className="container mx-auto px-6">
+    <section id="about" ref={ref} className="min-h-screen py-20 relative overflow-hidden flex items-center" data-testid="about-section">
+      {/* Animated Background */}
+      <div className="absolute inset-0 z-0">
+        <div className="w-full h-full bg-gradient-to-br from-background via-card to-background animate-pulse-slow"></div>
+      </div>
+
+      {/* Floating Elements */}
+      <div className="absolute inset-0 z-0 pointer-events-none">
+        <div className="absolute top-20 left-20 w-16 h-16 bg-primary/10 rounded-xl rotate-12 animate-float"></div>
+        <div className="absolute top-40 right-32 w-12 h-12 bg-secondary/10 rounded-xl -rotate-12 animate-float" style={{ animationDelay: "1s" }}></div>
+        <div className="absolute bottom-32 left-1/4 w-20 h-20 bg-accent/10 rounded-xl rotate-45 animate-float" style={{ animationDelay: "2s" }}></div>
+        <div className="absolute top-1/2 right-1/4 w-14 h-14 bg-primary/10 rounded-xl -rotate-45 animate-float" style={{ animationDelay: "3s" }}></div>
+      </div>
+
+      <div className="container mx-auto px-6 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Photo Card */}
           <motion.div

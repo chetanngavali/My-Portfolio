@@ -36,15 +36,29 @@ export function Cybersecurity() {
     <section
       id="cybersecurity"
       ref={ref}
-      className="py-20 relative"
-      style={{
-        backgroundImage: `url(${cybersecurityBg})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-      }}
+      className="min-h-screen py-20 relative overflow-hidden flex items-center"
       data-testid="cybersecurity-section"
     >
-      <div className="absolute inset-0 bg-gradient-to-br from-background/95 via-background/90 to-primary/10"></div>
+      {/* Animated Background */}
+      <div className="absolute inset-0 z-0">
+        <div className="w-full h-full bg-gradient-to-br from-background via-card to-background animate-pulse-slow"></div>
+      </div>
+
+      {/* Floating Security Elements */}
+      <div className="absolute inset-0 z-0 pointer-events-none">
+        <div className="absolute top-20 right-20 w-16 h-16 bg-primary/10 rounded-xl rotate-45 animate-float">
+          <Shield className="w-8 h-8 text-primary/50 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 -rotate-45" />
+        </div>
+        <div className="absolute bottom-40 left-32 w-14 h-14 bg-secondary/10 rounded-xl -rotate-12 animate-float" style={{ animationDelay: "1s" }}>
+          <Wifi className="w-7 h-7 text-secondary/50 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 rotate-12" />
+        </div>
+        <div className="absolute top-1/3 left-1/4 w-12 h-12 bg-accent/10 rounded-xl rotate-12 animate-float" style={{ animationDelay: "2s" }}>
+          <Bug className="w-6 h-6 text-accent/50 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 -rotate-12" />
+        </div>
+        <div className="absolute bottom-1/4 right-1/3 w-18 h-18 bg-primary/10 rounded-xl -rotate-45 animate-float" style={{ animationDelay: "3s" }}>
+          <Eye className="w-8 h-8 text-primary/50 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 rotate-45" />
+        </div>
+      </div>
 
       <div className="container mx-auto px-6 relative z-10">
         <motion.div

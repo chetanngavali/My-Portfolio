@@ -68,8 +68,25 @@ export function Projects() {
     : projects.filter(project => project.category === activeFilter);
 
   return (
-    <section id="projects" ref={ref} className="py-20 bg-card" data-testid="projects-section">
-      <div className="container mx-auto px-6">
+    <section id="projects" ref={ref} className="min-h-screen py-20 relative overflow-hidden flex items-center" data-testid="projects-section">
+      {/* Animated Background */}
+      <div className="absolute inset-0 z-0">
+        <div className="w-full h-full bg-gradient-to-br from-background via-card to-background animate-pulse-slow"></div>
+      </div>
+
+      {/* Floating Project Elements */}
+      <div className="absolute inset-0 z-0 pointer-events-none">
+        <div className="absolute top-20 left-20 w-16 h-16 bg-primary/10 rounded-xl rotate-45 animate-float">
+          <Rocket className="w-8 h-8 text-primary/50 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 -rotate-45" />
+        </div>
+        <div className="absolute bottom-32 right-1/4 w-14 h-14 bg-secondary/10 rounded-xl -rotate-12 animate-float" style={{ animationDelay: "1s" }}>
+          <Github className="w-7 h-7 text-secondary/50 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 rotate-12" />
+        </div>
+        <div className="absolute top-1/2 right-32 w-12 h-12 bg-accent/10 rounded-xl rotate-12 animate-float" style={{ animationDelay: "2s" }}></div>
+        <div className="absolute bottom-1/4 left-1/3 w-18 h-18 bg-primary/10 rounded-xl -rotate-45 animate-float" style={{ animationDelay: "3s" }}></div>
+      </div>
+
+      <div className="container mx-auto px-6 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={isIntersecting ? { opacity: 1, y: 0 } : {}}
