@@ -14,9 +14,7 @@ export function Navigation() {
     { href: "#about", label: "About" },
     { href: "#cybersecurity", label: "Cybersecurity" },
     { href: "#photography", label: "Photography" },
-    { href: "#design", label: "Design" },
     { href: "#projects", label: "Projects" },
-    { href: "#activities", label: "Activities" },
     { href: "#contact", label: "Contact" },
   ];
 
