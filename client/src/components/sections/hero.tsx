@@ -1,16 +1,10 @@
 import { motion } from "framer-motion";
 import { ChevronDown, Shield, Camera, Palette, Code } from "lucide-react";
 import { useIntersectionObserver } from "@/hooks/use-intersection-observer";
+import { Link } from "wouter";
 
 export function Hero() {
   const { ref, isIntersecting } = useIntersectionObserver();
-
-  const scrollToNext = () => {
-    const aboutSection = document.getElementById("about");
-    if (aboutSection) {
-      aboutSection.scrollIntoView({ behavior: "smooth", block: "start" });
-    }
-  };
 
   return (
     <section
@@ -70,28 +64,20 @@ export function Hero() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button
-              onClick={() => {
-                const projectsSection = document.getElementById("projects");
-                if (projectsSection) {
-                  projectsSection.scrollIntoView({ behavior: "smooth", block: "start" });
-                }
-              }}
-              className="px-8 py-4 bg-primary text-primary-foreground rounded-lg font-semibold hover:shadow-lg hover:shadow-primary/25 transition-all hover-tilt"
+            <Link
+              href="/projects"
+              className="px-8 py-4 bg-primary text-primary-foreground rounded-lg font-semibold hover:shadow-lg hover:shadow-primary/25 transition-all hover-tilt inline-block text-center"
               data-testid="view-work-button"
             >
               View My Work
-            </button>
-            <button
-              onClick={() => {
-                // TODO: Implement CV download
-                window.open("/resume.pdf", "_blank");
-              }}
-              className="px-8 py-4 border-2 border-primary text-primary rounded-lg font-semibold hover:bg-primary hover:text-primary-foreground transition-all"
-              data-testid="download-cv-button"
+            </Link>
+            <Link
+              href="/contact"
+              className="px-8 py-4 border-2 border-primary text-primary rounded-lg font-semibold hover:bg-primary hover:text-primary-foreground transition-all inline-block text-center"
+              data-testid="contact-button"
             >
-              Download CV
-            </button>
+              Get In Touch
+            </Link>
           </div>
         </motion.div>
 
@@ -100,11 +86,11 @@ export function Hero() {
           initial={{ opacity: 0 }}
           animate={isIntersecting ? { opacity: 1 } : {}}
           transition={{ delay: 1.5 }}
-          className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce cursor-pointer"
-          onClick={scrollToNext}
-          data-testid="scroll-indicator"
+          className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce"
         >
-          <ChevronDown className="w-8 h-8 text-primary" />
+          <Link href="/about" data-testid="scroll-indicator">
+            <ChevronDown className="w-8 h-8 text-primary cursor-pointer hover:text-secondary transition-colors" />
+          </Link>
         </motion.div>
       </div>
     </section>

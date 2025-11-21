@@ -10,20 +10,15 @@ export function Navigation() {
   const { theme, toggleTheme } = useTheme();
 
   const navItems = [
-    { href: "#home", label: "Home" },
-    { href: "#about", label: "About" },
-    { href: "#cybersecurity", label: "Cybersecurity" },
-    { href: "#photography", label: "Photography" },
-    { href: "#projects", label: "Projects" },
-    { href: "#contact", label: "Contact" },
+    { href: "/", label: "Home" },
+    { href: "/about", label: "About" },
+    { href: "/cybersecurity", label: "Cybersecurity" },
+    { href: "/photography", label: "Photography" },
+    { href: "/projects", label: "Projects" },
+    { href: "/contact", label: "Contact" },
   ];
 
-  const scrollToSection = (href: string) => {
-    const targetId = href.substring(1);
-    const targetElement = document.getElementById(targetId);
-    if (targetElement) {
-      targetElement.scrollIntoView({ behavior: "smooth", block: "start" });
-    }
+  const handleLinkClick = () => {
     setIsMobileMenuOpen(false);
   };
 
@@ -39,14 +34,14 @@ export function Navigation() {
           {/* Desktop Navigation */}
           <div className="hidden md:flex space-x-8">
             {navItems.map((item) => (
-              <button
+              <Link
                 key={item.href}
-                onClick={() => scrollToSection(item.href)}
-                className="hover:text-primary transition-colors"
+                href={item.href}
+                className={`hover:text-primary transition-colors ${location === item.href ? 'text-primary font-semibold' : ''}`}
                 data-testid={`nav-${item.label.toLowerCase()}`}
               >
                 {item.label}
-              </button>
+              </Link>
             ))}
           </div>
 
@@ -88,14 +83,15 @@ export function Navigation() {
           >
             <div className="flex flex-col space-y-4 pt-4">
               {navItems.map((item) => (
-                <button
+                <Link
                   key={item.href}
-                  onClick={() => scrollToSection(item.href)}
-                  className="text-left hover:text-primary transition-colors"
+                  href={item.href}
+                  onClick={handleLinkClick}
+                  className={`text-left hover:text-primary transition-colors ${location === item.href ? 'text-primary font-semibold' : ''}`}
                   data-testid={`mobile-nav-${item.label.toLowerCase()}`}
                 >
                   {item.label}
-                </button>
+                </Link>
               ))}
             </div>
           </motion.div>
