@@ -1,81 +1,81 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500;600;700&family=Orbitron:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Fira+Code:wght@300;400;500;600;700&family=Audiowide&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --background: hsl(0, 0%, 4%);
-  --foreground: hsl(0, 0%, 95%);
-  --card: hsl(240, 10%, 8%);
-  --card-foreground: hsl(0, 0%, 95%);
-  --popover: hsl(240, 10%, 8%);
-  --popover-foreground: hsl(0, 0%, 95%);
-  --primary: hsl(194, 100%, 50%);
-  --primary-foreground: hsl(0, 0%, 0%);
-  --secondary: hsl(270, 100%, 40%);
-  --secondary-foreground: hsl(0, 0%, 100%);
-  --muted: hsl(240, 10%, 15%);
-  --muted-foreground: hsl(240, 5%, 64%);
-  --accent: hsl(140, 100%, 60%);
-  --accent-foreground: hsl(0, 0%, 0%);
-  --destructive: hsl(356, 90%, 54%);
+  --background: hsl(250, 40%, 6%);
+  --foreground: hsl(50, 100%, 98%);
+  --card: hsl(250, 35%, 10%);
+  --card-foreground: hsl(50, 100%, 98%);
+  --popover: hsl(250, 35%, 10%);
+  --popover-foreground: hsl(50, 100%, 98%);
+  --primary: hsl(280, 100%, 65%);
+  --primary-foreground: hsl(0, 0%, 100%);
+  --secondary: hsl(45, 100%, 55%);
+  --secondary-foreground: hsl(250, 40%, 6%);
+  --muted: hsl(250, 30%, 20%);
+  --muted-foreground: hsl(50, 20%, 70%);
+  --accent: hsl(175, 100%, 50%);
+  --accent-foreground: hsl(250, 40%, 6%);
+  --destructive: hsl(0, 85%, 60%);
   --destructive-foreground: hsl(0, 0%, 100%);
-  --border: hsl(240, 10%, 15%);
-  --input: hsl(240, 10%, 15%);
-  --ring: hsl(194, 100%, 50%);
-  --chart-1: hsl(194, 100%, 50%);
-  --chart-2: hsl(140, 100%, 60%);
-  --chart-3: hsl(42, 93%, 56%);
-  --chart-4: hsl(147, 79%, 42%);
-  --chart-5: hsl(341, 75%, 51%);
-  --sidebar: hsl(240, 10%, 8%);
-  --sidebar-foreground: hsl(0, 0%, 95%);
-  --sidebar-primary: hsl(194, 100%, 50%);
-  --sidebar-primary-foreground: hsl(0, 0%, 0%);
-  --sidebar-accent: hsl(240, 10%, 15%);
-  --sidebar-accent-foreground: hsl(194, 100%, 50%);
-  --sidebar-border: hsl(240, 10%, 15%);
-  --sidebar-ring: hsl(194, 100%, 50%);
-  --font-sans: 'Inter', sans-serif;
+  --border: hsl(250, 30%, 20%);
+  --input: hsl(250, 30%, 20%);
+  --ring: hsl(280, 100%, 65%);
+  --chart-1: hsl(280, 100%, 65%);
+  --chart-2: hsl(175, 100%, 50%);
+  --chart-3: hsl(45, 100%, 55%);
+  --chart-4: hsl(320, 100%, 60%);
+  --chart-5: hsl(200, 100%, 50%);
+  --sidebar: hsl(250, 35%, 10%);
+  --sidebar-foreground: hsl(50, 100%, 98%);
+  --sidebar-primary: hsl(280, 100%, 65%);
+  --sidebar-primary-foreground: hsl(0, 0%, 100%);
+  --sidebar-accent: hsl(250, 30%, 20%);
+  --sidebar-accent-foreground: hsl(280, 100%, 65%);
+  --sidebar-border: hsl(250, 30%, 20%);
+  --sidebar-ring: hsl(280, 100%, 65%);
+  --font-sans: 'Space Grotesk', sans-serif;
   --font-serif: 'Georgia', serif;
-  --font-mono: 'JetBrains Mono', monospace;
-  --font-tech: 'Orbitron', monospace;
-  --radius: 8px;
-  --cyber-blue: hsl(194, 100%, 50%);
-  --cyber-purple: hsl(270, 100%, 60%);
-  --cyber-green: hsl(120, 100%, 50%);
-  --cyber-pink: hsl(300, 100%, 50%);
+  --font-mono: 'Fira Code', monospace;
+  --font-tech: 'Audiowide', cursive;
+  --radius: 16px;
+  --cyber-purple: hsl(280, 100%, 65%);
+  --cyber-cyan: hsl(175, 100%, 50%);
+  --cyber-yellow: hsl(45, 100%, 55%);
+  --cyber-pink: hsl(320, 100%, 60%);
 }
 
 .light {
-  --background: hsl(0, 0%, 98%);
-  --foreground: hsl(240, 10%, 15%);
+  --background: hsl(45, 60%, 97%);
+  --foreground: hsl(250, 40%, 10%);
   --card: hsl(0, 0%, 100%);
-  --card-foreground: hsl(240, 10%, 15%);
+  --card-foreground: hsl(250, 40%, 10%);
   --popover: hsl(0, 0%, 100%);
-  --popover-foreground: hsl(240, 10%, 15%);
-  --primary: hsl(194, 80%, 40%);
+  --popover-foreground: hsl(250, 40%, 10%);
+  --primary: hsl(280, 90%, 45%);
   --primary-foreground: hsl(0, 0%, 100%);
-  --secondary: hsl(270, 80%, 60%);
-  --secondary-foreground: hsl(0, 0%, 100%);
-  --muted: hsl(210, 40%, 96%);
-  --muted-foreground: hsl(215, 16%, 47%);
-  --accent: hsl(140, 80%, 40%);
+  --secondary: hsl(45, 90%, 50%);
+  --secondary-foreground: hsl(250, 40%, 10%);
+  --muted: hsl(45, 30%, 92%);
+  --muted-foreground: hsl(250, 20%, 40%);
+  --accent: hsl(175, 80%, 35%);
   --accent-foreground: hsl(0, 0%, 100%);
-  --destructive: hsl(356, 90%, 54%);
+  --destructive: hsl(0, 85%, 60%);
   --destructive-foreground: hsl(0, 0%, 100%);
-  --border: hsl(214, 32%, 91%);
-  --input: hsl(214, 32%, 91%);
-  --ring: hsl(194, 80%, 40%);
+  --border: hsl(45, 25%, 88%);
+  --input: hsl(45, 25%, 88%);
+  --ring: hsl(280, 90%, 45%);
   --sidebar: hsl(0, 0%, 100%);
-  --sidebar-foreground: hsl(240, 10%, 15%);
-  --sidebar-primary: hsl(194, 80%, 40%);
+  --sidebar-foreground: hsl(250, 40%, 10%);
+  --sidebar-primary: hsl(280, 90%, 45%);
   --sidebar-primary-foreground: hsl(0, 0%, 100%);
-  --sidebar-accent: hsl(210, 40%, 96%);
-  --sidebar-accent-foreground: hsl(194, 80%, 40%);
-  --sidebar-border: hsl(214, 32%, 91%);
-  --sidebar-ring: hsl(194, 80%, 40%);
+  --sidebar-accent: hsl(45, 30%, 92%);
+  --sidebar-accent-foreground: hsl(280, 90%, 45%);
+  --sidebar-border: hsl(45, 25%, 88%);
+  --sidebar-ring: hsl(280, 90%, 45%);
 }
 
 @layer base {
@@ -96,79 +96,150 @@
 @layer utilities {
   .font-tech {
     font-family: var(--font-tech);
+    letter-spacing: 0.05em;
   }
 
   .cyber-grid {
     background-image: 
-      linear-gradient(rgba(0, 212, 255, 0.1) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(0, 212, 255, 0.1) 1px, transparent 1px);
-    background-size: 50px 50px;
+      linear-gradient(hsl(280, 100%, 65%, 0.15) 2px, transparent 2px),
+      linear-gradient(90deg, hsl(280, 100%, 65%, 0.15) 2px, transparent 2px),
+      linear-gradient(hsl(175, 100%, 50%, 0.08) 1px, transparent 1px),
+      linear-gradient(90deg, hsl(175, 100%, 50%, 0.08) 1px, transparent 1px);
+    background-size: 80px 80px, 80px 80px, 20px 20px, 20px 20px;
+    background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
   }
 
   .terminal-effect {
-    background: linear-gradient(45deg, rgba(0, 20, 0, 0.8), rgba(0, 40, 0, 0.9));
-    border: 1px solid var(--cyber-green);
+    background: linear-gradient(135deg, rgba(280, 100%, 20%, 0.9), rgba(175, 100%, 20%, 0.95));
+    border: 2px solid var(--cyber-purple);
     font-family: var(--font-mono);
+    box-shadow: 0 0 30px hsl(280, 100%, 65%, 0.3);
   }
 
   .neon-border {
-    border: 2px solid transparent;
+    border: 3px solid transparent;
     background: linear-gradient(var(--card), var(--card)) padding-box,
-                linear-gradient(45deg, var(--primary), var(--secondary), var(--accent)) border-box;
+                linear-gradient(135deg, var(--primary), var(--secondary), var(--accent), var(--primary)) border-box;
+    background-size: 100% 100%, 200% 200%;
+    animation: borderGlow 3s ease infinite;
   }
 
   .glass-effect {
-    background: rgba(26, 26, 26, 0.8);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: linear-gradient(135deg, 
+      rgba(45, 20, 80, 0.7), 
+      rgba(30, 15, 60, 0.8));
+    backdrop-filter: blur(16px) saturate(180%);
+    border: 2px solid rgba(180, 100, 255, 0.2);
+    box-shadow: 
+      0 8px 32px rgba(0, 0, 0, 0.4),
+      inset 0 1px 0 rgba(255, 255, 255, 0.1);
   }
 
   .light .glass-effect {
-    background: rgba(255, 255, 255, 0.8);
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    background: linear-gradient(135deg,
+      rgba(255, 255, 255, 0.9),
+      rgba(255, 250, 235, 0.85));
+    border: 2px solid rgba(180, 100, 255, 0.3);
+    box-shadow: 
+      0 8px 32px rgba(0, 0, 0, 0.1),
+      inset 0 1px 0 rgba(255, 255, 255, 0.8);
   }
 
   .hover-tilt {
-    transition: transform 0.3s ease;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   }
 
   .hover-tilt:hover {
-    transform: perspective(1000px) rotateX(5deg) rotateY(5deg);
+    transform: perspective(1200px) rotateX(8deg) rotateY(-8deg) translateY(-8px);
+    box-shadow: 0 20px 60px rgba(180, 100, 255, 0.4);
   }
 
   .animate-float {
-    animation: float 6s ease-in-out infinite;
+    animation: float 8s ease-in-out infinite;
   }
 
   .animate-glow {
-    animation: glow 2s ease-in-out infinite alternate;
+    animation: glow 3s ease-in-out infinite alternate;
   }
 
   .animate-slide-up {
-    animation: slideUp 0.6s ease-out;
+    animation: slideUp 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   }
 
   .animate-fade-in {
-    animation: fadeIn 0.8s ease-out;
+    animation: fadeIn 1s ease-out;
+  }
+
+  .animate-pulse-slow {
+    animation: pulseSlow 4s ease-in-out infinite;
+  }
+
+  .gradient-text {
+    background: linear-gradient(135deg, var(--primary), var(--secondary), var(--accent));
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientShift 5s ease infinite;
   }
 }
 
 @keyframes float {
-  0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(-20px); }
+  0%, 100% { 
+    transform: translateY(0px) rotate(0deg); 
+  }
+  50% { 
+    transform: translateY(-30px) rotate(5deg); 
+  }
 }
 
 @keyframes glow {
-  0% { box-shadow: 0 0 20px var(--primary); }
-  100% { box-shadow: 0 0 40px var(--primary), 0 0 60px var(--primary); }
+  0% { 
+    box-shadow: 
+      0 0 20px var(--primary), 
+      0 0 40px var(--primary);
+  }
+  100% { 
+    box-shadow: 
+      0 0 40px var(--primary), 
+      0 0 80px var(--primary),
+      0 0 120px var(--accent);
+  }
 }
 
 @keyframes slideUp {
-  0% { opacity: 0; transform: translateY(30px); }
-  100% { opacity: 1; transform: translateY(0); }
+  0% { 
+    opacity: 0; 
+    transform: translateY(60px) scale(0.95);
+  }
+  100% { 
+    opacity: 1; 
+    transform: translateY(0) scale(1);
+  }
 }
 
 @keyframes fadeIn {
   0% { opacity: 0; }
   100% { opacity: 1; }
+}
+
+@keyframes pulseSlow {
+  0%, 100% { 
+    opacity: 0.6; 
+    transform: scale(1);
+  }
+  50% { 
+    opacity: 1; 
+    transform: scale(1.05);
+  }
+}
+
+@keyframes borderGlow {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+@keyframes gradientShift {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
 }
