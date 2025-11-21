@@ -86,7 +86,7 @@ export function About() {
                   initial={{ opacity: 0, y: 20 }}
                   animate={isIntersecting ? { opacity: 1, y: 0 } : {}}
                   transition={{ duration: 0.5, delay: 0.4 + index * 0.1 }}
-                  className="p-4 glass-effect rounded-lg text-center hover-tilt"
+                  className="p-4 glass-effect rounded-lg text-center card-3d"
                   data-testid={`skill-${skill.label.toLowerCase()}`}
                 >
                   <skill.icon className={`${skill.color} w-8 h-8 mx-auto mb-2`} />

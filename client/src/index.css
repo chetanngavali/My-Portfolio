@@ -188,6 +188,114 @@
     -webkit-text-fill-color: transparent;
     animation: gradientShift 5s ease infinite;
   }
+
+  .nav-3d {
+    background: linear-gradient(135deg, 
+      rgba(45, 20, 80, 0.85), 
+      rgba(30, 15, 60, 0.9));
+    backdrop-filter: blur(20px) saturate(180%);
+    border-bottom: 2px solid rgba(180, 100, 255, 0.2);
+    box-shadow: 
+      0 8px 32px rgba(0, 0, 0, 0.5),
+      0 2px 16px rgba(180, 100, 255, 0.1),
+      inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    transform-style: preserve-3d;
+  }
+
+  .light .nav-3d {
+    background: linear-gradient(135deg,
+      rgba(255, 255, 255, 0.95),
+      rgba(255, 250, 235, 0.9));
+    border-bottom: 2px solid rgba(180, 100, 255, 0.3);
+    box-shadow: 
+      0 8px 32px rgba(0, 0, 0, 0.1),
+      0 2px 16px rgba(180, 100, 255, 0.15);
+  }
+
+  .footer-3d {
+    background: linear-gradient(180deg, 
+      rgba(30, 15, 60, 0.95), 
+      rgba(45, 20, 80, 0.98));
+    border-top: 2px solid rgba(180, 100, 255, 0.2);
+    box-shadow: 
+      0 -8px 32px rgba(0, 0, 0, 0.5),
+      0 -2px 16px rgba(180, 100, 255, 0.1);
+  }
+
+  .light .footer-3d {
+    background: linear-gradient(180deg,
+      rgba(255, 250, 235, 0.95),
+      rgba(255, 255, 255, 0.98));
+    border-top: 2px solid rgba(180, 100, 255, 0.3);
+    box-shadow: 
+      0 -8px 32px rgba(0, 0, 0, 0.1),
+      0 -2px 16px rgba(180, 100, 255, 0.15);
+  }
+
+  .logo-3d {
+    text-shadow: 
+      2px 2px 4px rgba(0, 0, 0, 0.3),
+      0 0 20px rgba(180, 100, 255, 0.5),
+      0 0 40px rgba(180, 100, 255, 0.3);
+    transform: translateZ(20px);
+  }
+
+  .button-3d {
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+    box-shadow: 
+      0 4px 12px rgba(0, 0, 0, 0.2),
+      0 2px 8px rgba(180, 100, 255, 0.15),
+      inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+
+  .button-3d:hover {
+    transform: perspective(1000px) translateZ(10px);
+    box-shadow: 
+      0 8px 24px rgba(0, 0, 0, 0.3),
+      0 4px 16px rgba(180, 100, 255, 0.25),
+      inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  }
+
+  .nav-link-3d {
+    transform-style: preserve-3d;
+    position: relative;
+    box-shadow: 
+      0 2px 8px rgba(0, 0, 0, 0.1),
+      inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  }
+
+  .card-3d {
+    transform-style: preserve-3d;
+    transform: perspective(1200px);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 
+      0 10px 40px rgba(0, 0, 0, 0.3),
+      0 2px 16px rgba(180, 100, 255, 0.1),
+      inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  }
+
+  .card-3d:hover {
+    transform: perspective(1200px) translateY(-12px) rotateX(5deg) rotateY(-5deg);
+    box-shadow: 
+      0 20px 60px rgba(0, 0, 0, 0.4),
+      0 8px 32px rgba(180, 100, 255, 0.2),
+      0 0 80px rgba(180, 100, 255, 0.15),
+      inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  }
+
+  .section-3d {
+    transform-style: preserve-3d;
+    perspective: 1500px;
+  }
+
+  .element-3d {
+    transform: translateZ(40px);
+    box-shadow: 
+      0 15px 50px rgba(0, 0, 0, 0.4),
+      0 5px 20px rgba(180, 100, 255, 0.2);
+  }
 }
 
 @keyframes float {

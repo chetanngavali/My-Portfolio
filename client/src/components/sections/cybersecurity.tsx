@@ -106,7 +106,7 @@ export function Cybersecurity() {
               initial={{ opacity: 0, y: 30 }}
               animate={isIntersecting ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.8, delay: 0.4 + index * 0.1 }}
-              className="glass-effect p-6 rounded-xl hover-tilt"
+              className="glass-effect p-6 rounded-xl card-3d"
               data-testid={`expertise-${area.title.toLowerCase().replace(/\s+/g, '-')}`}
             >
               <div className={`text-3xl text-${area.color} mb-4`}>

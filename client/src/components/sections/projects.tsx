@@ -131,7 +131,7 @@ export function Projects() {
               initial={{ opacity: 0, y: 30 }}
               animate={isIntersecting ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.8, delay: 0.4 + index * 0.1 }}
-              className="group glass-effect rounded-xl overflow-hidden hover-tilt"
+              className="group glass-effect rounded-xl overflow-hidden card-3d"
               data-testid={`project-${project.title.toLowerCase().replace(/[^a-z0-9]/g, '-')}`}
             >
               <img
